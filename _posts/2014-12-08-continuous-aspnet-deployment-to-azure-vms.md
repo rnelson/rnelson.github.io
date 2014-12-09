@@ -93,18 +93,19 @@ modifications.
 1. In Visual Studio, right click on your web project and choose _Publish..._
 2. Expand _More Options_ and choose _Microsoft Azure Virtual Machines_
 3. Create a new VM
-4. Set a DNS name; if you choose _example_, you'll get _example.cloudapp.net_
-5. Choose a **public image** matching the environment you want; I chose _Windows Server 2012 R2 Datacenter, September 2014_, which is the latest at this time
-6. Leave _Enable IIS and Web Deploy_ checked
-7. Select a VM size
-8. Specify a username and password to be set up as the default administrator user; for this example, I'll go with _user_ and _password_
-9. Select a location
-10. Click OK
-11. Visual Studio will tell you that the VM is being created; click OK to dismiss the prompt
-12. After the VM is created and configured, right click on the web project and choose _Publish..._ again
-13. Click _Publish_
-14. Visit your site (http://example.cloudapp.net) and verify that the project was deployed
-15. Once it's properly deployed, RDP into your server and set the admin user's password to not expire
+    1. Set a DNS name; if you choose _example_, you'll get _example.cloudapp.net_
+    2. Choose a **public image** matching the environment you want
+        1. I chose _Windows Server 2012 R2 Datacenter, September 2014_, which is the latest at this time
+        2. Leave _Enable IIS and Web Deploy_ checked
+    3. Select a VM size
+    4. Specify a username and password to be set up as the default administrator user; for this example, I'll go with _user_ and _password_
+    5. Select a location
+    6. Click OK
+4. Visual Studio will tell you that the VM is being created; click OK to dismiss the prompt
+5. After the VM is created and configured, right click on the web project and choose _Publish..._ again
+6. Click _Publish_
+7. Visit your site (http://example.cloudapp.net) and verify that the project was deployed
+8. Once it's properly deployed, RDP into your server and set the admin user's password to not expire
 
 If you choose to use an existing server or create one outside of Azure, you 
 will need to 
@@ -120,15 +121,28 @@ Ensure you select _continuous integration_ on the _Trigger_ tab.
 
 Once you have a CI build definition, edit it (open the Team Explorer pane, 
 click the Home button if necessary, click Builds, right click on the definition 
-and edit). Go to the _Process_ tab and specify a value under 
-<kbd>4. Advanced</kbd> for arguments to MSBuild:
+and edit).
 
-<kbd>/p:VisualStudioVersion=12.0 /p:DeployOnBuild=true /p:AllowUntrustedCertificate=true /p:PublishProfile=<em>example</em>.pubxml /p:UserName=<em>user</em> /p:Password=<em>password</em></kbd>
+Go to the _Process_ tab and look for the option to specify arguments to 
+MSBuild. I can't tell you exactly where this is as it depends on what template 
+the project was created with.
+
+Once you find it, specify the following arguments:
+
++ <kbd>/p:VisualStudioVersion=12.0</kbd>
++ <kbd>/p:DeployOnBuild=true</kbd>
++ <kbd>/p:AllowUntrustedCertificate=true</kbd>
++ <kbd>/p:PublishProfile=</kbd>example<kbd>.pubxml</kbd>
++ <kbd>/p:UserName=</kbd>user
++ <kbd>/p:Password=</kbd>password
+
+Here are those options in a single string to simplify copying and pasting:
+
+    /p:VisualStudioVersion=12.0 /p:DeployOnBuild=true /p:AllowUntrustedCertificate=true /p:PublishProfile=example.pubxml /p:UserName=user /p:Password=password
+
+Be sure to set the correct values for the publish profile and user credentials.
 
 The setting I was doing incorrectly was _PublishProfile_. Most things I saw 
-simply had **example** and skipped the <kbd>.pubxml</kbd> This resulted in 
-MSBuild not attempting to deploy the site, which in turn resulted in me banging 
-my head against the wall.
-
-Obviously, you need to make _example_, _user_, and _password_ match the name of 
-the publish profile and administrator credentials on the server.
+simply had <kbd>example</kbd> and skipped the <kbd>.pubxml</kbd> This resulted 
+in MSBuild not attempting to deploy the site, which in turn resulted in me
+banging my head against the wall.
