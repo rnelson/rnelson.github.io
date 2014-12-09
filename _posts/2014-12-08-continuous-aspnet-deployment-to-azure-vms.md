@@ -73,8 +73,6 @@ found differed from our environment in one of two ways:
 In theory, every Web Deploy tutorial I found should have worked, but they never 
 did.
 
-Finally, I was able to sort it out.
-
 ## Solution
 
 My suggested setup for continuous deployments in our environment has two bits, 
