@@ -18,7 +18,7 @@ setup. We'll still have some Windows apps here and there, but the bulk of our
 functionality will run in a browser.
 
 With the current software being a messy VB6 application using a third-party 
-Visual SourceSafe clone for source control, we don't use any modern software 
+Visual Source Safe clone for source control, we don't use any modern software 
 development things with it, such as unit tests or continuous integration.
 
 Moving to the modern .NET stack is allowing us to easily use these tools, and 
