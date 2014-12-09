@@ -7,13 +7,7 @@ description: ""
 
 ## Blog
 
-I keep starting blogs, but instead of adding new technical posts when I come up 
-with one, I inevitably start filling them with personal posts to keep the site
-active. A year or so later, I get tired of having so few technical posts and 
-kill the blog.
-
-Instead of doing that, I am going to keep this one technical. If no new posts
-are added in a couple of years, so be it.
+This is my place to write about technical things.
 
 ## Me
 
