@@ -11,7 +11,7 @@ email: ross.nelson+github@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Infrequent posts about technology.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blog.rnelson.me" # the base hostname & protocol for your site
+url: "https://rnelson.github.io" # the base hostname & protocol for your site
 twitter_username: rossnelson
 github_username:  rnelson
 
