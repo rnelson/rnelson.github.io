@@ -21,7 +21,7 @@ that would rely on another service that I run in a different container. It also 
 frontend to Redis.
 
 ```
-PS C:\dev> dotnet new webapi -n SimpleCacheApi
+C:\dev>dotnet new webapi -n SimpleCacheApi
 The template "ASP.NET Core Web API" was created successfully.
 
 Processing post-creation actions...
@@ -31,15 +31,15 @@ Restoring C:\dev\SimpleCacheApi\SimpleCacheApi.csproj:
 Restore succeeded.
 
 
-PS C:\dev> cd .\SimpleCacheApi\
-PS C:\dev\SimpleCacheApi>
+C:\dev>cd .\SimpleCacheApi\
+C:\dev\SimpleCacheApi>
 ```
 
 The container support is provided by the [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) package. Add that to your project through whatever 
 method you prefer. I simply added it from the `dotnet` CLI.
 
 ```
-PS C:\dev\SimpleCacheApi> dotnet add package Microsoft.NET.Build.Containers
+C:\dev\SimpleCacheApi>dotnet add package Microsoft.NET.Build.Containers
   Determining projects to restore...
   Writing C:\Users\ross\AppData\Local\Temp\tmpAF9C.tmp
 info : Installed Microsoft.NET.Build.Containers 0.1.8 from https://api.nuget.org/v3/index.json with content hash xhWyycoiI+AtKX6gbIb/XvNSajOr3+CKcYTSklTsNcMwXCNsWWMEC9+1si+0/mLM5GT+RFmaIokmdJDltYA9Ew==.
@@ -49,13 +49,13 @@ info : Generating MSBuild file C:\dev\SimpleCacheApi\obj\SimpleCacheApi.csproj.n
 info : Generating MSBuild file C:\dev\SimpleCacheApi\obj\SimpleCacheApi.csproj.nuget.g.targets.
 info : Writing assets file to disk. Path: C:\dev\SimpleCacheApi\obj\project.assets.json
 log  : Restored C:\dev\SimpleCacheApi\SimpleCacheApi.csproj (in 389 ms).
-PS C:\dev\SimpleCacheApi>
+C:\dev\SimpleCacheApi>
 ```
 
 Because I am going to rely on Redis as my backend cache, I also needed to install [StackExchange.Redis](https://www.nuget.org/packages/StackExchange.Redis).
 
 ```
-PS C:\dev\SimpleCacheApi> dotnet add package StackExchange.Redis
+C:\dev\SimpleCacheApi>dotnet add package StackExchange.Redis
   Determining projects to restore...
   Writing C:\Users\ross\AppData\Local\Temp\tmpD3C1.tmp
 info : Installed Microsoft.NETCore.Platforms 5.0.0 from https://api.nuget.org/v3/index.json with content hash VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==.
@@ -76,7 +76,7 @@ info : Package 'StackExchange.Redis' is compatible with all the specified framew
 info : PackageReference for package 'StackExchange.Redis' version '2.6.48' added to file 'C:\dev\SimpleCacheApi\SimpleCacheApi.csproj'.
 info : Writing assets file to disk. Path: C:\dev\SimpleCacheApi\obj\project.assets.json
 log  : Restored C:\dev\SimpleCacheApi\SimpleCacheApi.csproj (in 2.13 sec).
-PS C:\dev\SimpleCacheApi>
+C:\dev\SimpleCacheApi>
 ```
 
 ## Coding the API
