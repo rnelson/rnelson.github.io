@@ -237,3 +237,10 @@ simplecacheapi-web-1    |       Content root path: /app
 Now that we have Redis running (I don't have it installed on my desktop), we can test out the API. Because I use [JetBrains' Rider](https://www.jetbrains.com/rider/) as my IDE and 
 have the [HTTP Client plugin](https://www.jetbrains.com/help/rider/2022.2/Http_client_in__product__code_editor.html) installed, I was able to make [a single plaintext file that 
 tests the API out for me](https://github.com/rnelson/SimpleCacheApi/blob/9036935257a4295e4f616e5cb2a6607b028b0711/CacheTest.http).
+
+# Conclusion
+
+Writing Dockerfiles isn't difficult in most cases, but they *are* largely boilerplate when you're doing common things like building a simple ASP.NET Core application that runs by 
+itself. The publish profile that generates the Dockerfile for you and sets it up in your Docker daemon is a welcome time saver.
+
+You can see the complete API source code at [rnelson/SimpleCacheApi](https://github.com/rnelson/SimpleCacheApi).
