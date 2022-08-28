@@ -8,16 +8,13 @@ tags: dotnet, docker, webapi, api, csharp, windows, microsoft, deployment
 
 # Built-in .NET SDK container support
 
-On August 25th 2022, Microsoft [announced built-in container support](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/) added to the latest 
-.NET 7 preview. It's incredibly simple. You just add a package reference and publish with a pre-made publish profile, and suddenly you have a Docker container. I wanted to test this out 
-and play with both Docker Compose, since I hadn't used that yet.
+On August 25th 2022, Microsoft [announced built-in container support](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/) added to the latest .NET 7 preview. It's incredibly simple. You just add a package reference and publish with a pre-made publish profile, and suddenly you have a Docker container. I wanted to test this out and play with both Docker Compose, since I hadn't used that yet.
 
 My development machine is running Windows 11, Docker Desktop configured for Linux containers. Development was done with .NET 7.0.100-preview.7.22377.5.
 
 # Creating the API
 
-The `dotnet new` tool will create a brand new WebApi project if you aren't working with an existing one. In my case, since I wanted to play with Docker Compose, I needed to build something 
-that would rely on another service that I run in a different container. It also needed to be simple enough to explain in a blog post. I settled on a simple cache API, providing an HTTP 
+The `dotnet new` tool will create a brand new WebApi project if you aren't working with an existing one. In my case, since I wanted to play with Docker Compose, I needed to build something that would rely on another service that I run in a different container. It also needed to be simple enough to explain in a blog post. I settled on a simple cache API, providing an HTTP 
 frontend to Redis.
 
 ```
@@ -35,8 +32,7 @@ C:\dev>cd .\SimpleCacheApi\
 C:\dev\SimpleCacheApi>
 ```
 
-The container support is provided by the [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) package. Add that to your project through whatever 
-method you prefer. I simply added it from the `dotnet` CLI.
+The container support is provided by the [Microsoft.NET.Build.Containers](https://www.nuget.org/packages/Microsoft.NET.Build.Containers) package. Add that to your project through whatever method you prefer. I simply added it from the `dotnet` CLI.
 
 ```
 C:\dev\SimpleCacheApi>dotnet add package Microsoft.NET.Build.Containers
@@ -81,8 +77,7 @@ C:\dev\SimpleCacheApi>
 
 ## Coding the API
 
-The API itself is very minimal since I only built it to test out the container support, so there wasn't much I had to do. After removing all of the default WeatherForecast stuff, I only had 
-two files that needed to be updated.
+The API itself is very minimal since I only built it to test out the container support, so there wasn't much I had to do. After removing all of the default WeatherForecast stuff, I only had a few files that needed to be updated.
 
 First, the Redis connection needs to be made available to the `IServiceCollection` by adding the following lines into `Program.cs`:
 
@@ -101,7 +96,6 @@ Wanting this API to be as simple as possible, I also didn't want to deal with JS
 Next, `Controllers/CacheController.cs` was added to be the interface between the user and Redis.
 
 ```csharp
-using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Mvc;
 using StackExchange.Redis;
 
@@ -161,8 +155,7 @@ public class CacheController : ControllerBase
 
 ## Publishing the API
 
-Assuming you have a Docker daemon already running on your machine, you can create your container by simply doing a `dotnet publish` that uses the `DefaultContainer` publish profile. The initial 
-release of the package only supports Linux on amd64 for the containers, so you also need to specify the OS and architecture in your publish command.
+Assuming you have a Docker daemon already running on your machine, you can create your container by simply doing a `dotnet publish` that uses the `DefaultContainer` publish profile. The initial release of the package only supports Linux on amd64 for the containers, so you also need to specify the OS and architecture in your publish command.
 
 ```
 C:\dev\SimpleCacheApi>dotnet publish --os linux --arch x64 -p:PublishProfile=DefaultContainer
@@ -184,8 +177,7 @@ C:\dev\SimpleCacheApi>
 
 ### Configuring Compose
 
-The `docker-compose.yml` file for this project is very simple. It adds two services, the API (with a name matching the container name that `dotnet publish` used) that exposes port 5010 on the host 
-to 80 on the container and a Redis container set up with all of its defaults.
+The `docker-compose.yml` file for this project is very simple. It adds two services, the API (with a name matching the container name that `dotnet publish` used) that exposes port 5010 on the host to 80 on the container and a Redis container set up with all of its defaults.
 
 ```yaml
 version: "3"
@@ -234,13 +226,10 @@ simplecacheapi-web-1    |       Content root path: /app
 
 ### Testing the API
 
-Now that we have Redis running (I don't have it installed on my desktop), we can test out the API. Because I use [JetBrains' Rider](https://www.jetbrains.com/rider/) as my IDE and 
-have the [HTTP Client plugin](https://www.jetbrains.com/help/rider/2022.2/Http_client_in__product__code_editor.html) installed, I was able to make [a single plaintext file that 
-tests the API out for me](https://github.com/rnelson/SimpleCacheApi/blob/9036935257a4295e4f616e5cb2a6607b028b0711/CacheTest.http).
+Now that we have Redis running (I don't have it installed on my desktop), we can test out the API. Because I use [JetBrains' Rider](https://www.jetbrains.com/rider/) as my IDE and have the [HTTP Client plugin](https://www.jetbrains.com/help/rider/2022.2/Http_client_in__product__code_editor.html) installed, I was able to make [a single plaintext file that tests the API out for me](https://github.com/rnelson/SimpleCacheApi/blob/9036935257a4295e4f616e5cb2a6607b028b0711/CacheTest.http).
 
 # Conclusion
 
-Writing Dockerfiles isn't difficult in most cases, but they *are* largely boilerplate when you're doing common things like building a simple ASP.NET Core application that runs by 
-itself. The publish profile that generates the Dockerfile for you and sets it up in your Docker daemon is a welcome time saver.
+Writing Dockerfiles isn't difficult in most cases, but they *are* largely boilerplate when you're doing common things like building a simple ASP.NET Core application that runs by itself. The publish profile that generates the Dockerfile for you and sets it up in your Docker daemon is a welcome time saver.
 
 You can see the complete API source code at [rnelson/SimpleCacheApi](https://github.com/rnelson/SimpleCacheApi).
