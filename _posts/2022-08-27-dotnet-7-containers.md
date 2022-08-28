@@ -8,7 +8,7 @@ tags: dotnet, docker, webapi, api, csharp, windows, microsoft, deployment
 
 # Built-in .NET SDK container support
 
-On August 25th 2022, Microsoft [announced built-in container support](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/) added to the latest .NET 7 preview. It's incredibly simple. You just add a package reference and publish with a pre-made publish profile, and suddenly you have a Docker container. I wanted to test this out and play with both Docker Compose, since I hadn't used that yet.
+On August 25th 2022, Microsoft [announced built-in container support](https://devblogs.microsoft.com/dotnet/announcing-builtin-container-support-for-the-dotnet-sdk/) added to the latest .NET 7 preview. It's incredibly simple. You just add a package reference and publish with a pre-made publish profile, and suddenly you have a Docker container. I wanted to test this out and play with Docker Compose, since I hadn't used that yet.
 
 My development machine is running Windows 11, Docker Desktop configured for Linux containers. Development was done with .NET 7.0.100-preview.7.22377.5.
 
