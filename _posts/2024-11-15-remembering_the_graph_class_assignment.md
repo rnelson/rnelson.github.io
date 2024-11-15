@@ -125,14 +125,16 @@ As a junior, I needed to add a Computer Science class to my schedule. Being a sm
 
 I broke my vow and signed up for GUI Programming (MFC, VB6, AWT/Swing), taught by Ken. Being a little further away from those early college days and not being salty about an honest mistake, I figured I'd give the guy another chance.
 
-As it turns out, he is one of the two professors that I absolutely loved from my undergrad. I don't actually use it for anything but Messenger and Events these days so I can't say I'm truly keeping in touch with him, but all these years later I'm friends with Ken on Facebook. He is one of the two professors who truly impacted me and that, other than this one story, I think back of fondly.
+As it turns out, he is one of the two professors that I absolutely loved from my undergrad. All these years later (and for quite some time now), I'm even friends with Ken on Facebook. He is one of the two professors who truly impacted me and that, other than this one story, I think back of fondly.
 
 # Conclusion
 
-Computer Science students: learn source control. SCCS, RCS, CVS, Subversion, Git, Perforce, Mercurial...I don't care, just pick something and start using it. You'll thank me later.
+Computer Science students: learn source control. Pick one and start using it. You'll thank me later.
 
 `/svn/school` moved from that Ultra 2 to my PowerBook when I moved for graduate school. It bounced around between a few local systems and a VPS, before ultimately being migrated to BitBucket (switching to git in the process) where it still lives today. The Ultra 2 was taken to an electronics recycler a few years ago.
 
 Though he never intended to teach it to us, Ken got me started on source control years before most of my peers used it at jobs. Of all the things I learned because of him, that's probably the one that's been the most beneficial.
+
+
 
 [^ken_footnote]: Ken, if you're reading this, please don't find a way to make SDSU rescind my degree for working together with friends!
