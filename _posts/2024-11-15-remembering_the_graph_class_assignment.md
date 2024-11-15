@@ -46,7 +46,22 @@ Tuesday evening, about 8pm this time, those two friends showed up at my place ag
 
 I was seldom up until midnight, let alone past midnight, so at about 11pm my brain would usually change from its normal state to something resembling Jell-O. Thankfully, we started about 3 hours earlier, so we would share the files that we were working on and while the other two tried to debug our then current state of the assignment I'd copy the latest onto my own laptop and start working on the next set of changes. It sounds counterproductive, but the bugs we were able to find were so small that it saved us time while I was able to be a bit more productive. A few hours in, however, Jell-O struck and we went back to a single laptop.
 
-Looking back at the code today, we did a pretty good job of testing. We had `simplemain.cpp` to give us a very simple, easy to debug set of inputs to find major problems, and `complexmain.cpp` to put our code through the paces to really test it out. Showing my frustration from some point that night, there is also `dsdfjdsfhdfsuiefwuiwefuihvjkxcvjnkxcvjkvhjdsfuiohwefuohefuiohweruirui3244uerruihdfjkhxcvjkcvxnxcvzjknsdjhkdsfhewfuiewruewruioefwouifuiodfhjvchjkcvxjhkdfshjfdahfhjkewhjkweuhdsfhjvhjkv.cpp`.
+Looking back at the code today, we did a pretty good job of testing. We had `simplemain.cpp` to give us a very simple, easy to debug set of inputs to find major problems, and `complexmain.cpp` to put our code through the paces to really test it out. Showing my frustration from some point that night, there is also `dsdfjdsfhdfsuiefwuiwefuihvjkxcvjnkxcvjkvhjdsfuiohwefuohefuiohweruirui3244uerruihdfjkhxcvjkcvxnxcvzjknsdjhkdsfhewfuiewruewruioefwouifuiodfhjvchjkcvxjhkdfshjfdahfhjkewhjkweuhdsfhjvhjkv.cpp`:
+
+```c++
+#include <iostream>
+#include "nelsonr8.h"
+
+int main() {
+  {
+    Graph g;
+    g.addArc(1, 2);
+    g.bFS(1);g.dFS(1);
+  }
+
+  return 0;
+}
+```
 
 # Midnight
 
