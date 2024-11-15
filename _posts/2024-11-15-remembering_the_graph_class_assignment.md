@@ -20,7 +20,7 @@ Data Structures, however, was run by Ken. Gone was all coddling, replaced with T
 
 # Assignment 8
 
-The 8th homework assignment was to build a class that represented [a graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)). We were provided an object file (for linux-alpha) that provided a bit of implementation, and a header file to define the class. The implementation of the class itself was up to us. Easy peasy!
+The 8th homework assignment was to build a class that represented [a graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)). We were provided an object file (for linux-alpha) that provided a bit of adjacent implementation, and a header file to define the class. The implementation of the class itself was up to us. Easy peasy!
 
 Having started out with QBasic the summer after 7th grade, I'd spent a lot of years doing some programming before I got to college, so most of my classes were incredibly easy for me. I would typically start assignments the day they were assigned and be done within an hour or two. During the Data Structures class, however, a few friends started having far more questions on the assignments and it was easier if I worked on them at the same time instead of having been done for a week and a half. For the first 7 assignments, this worked flawlessly.
 
@@ -36,7 +36,7 @@ We watched TV. The Daily Show, Family Guy, whatever else was on Comedy Central b
 
 We worked through the night, all of us struggling to solve the problem. At some point, we got into a nice groove that fit with our skills at the time. We switched to one person's laptop. I'd write some code and hand the laptop to one of the other two. He would run a sample through it and start debugging (but not with a debugger, that was still pretty much beyond us at the time). If he couldn't find and fix anything within a few minutes, he'd hand the laptop off to the third person who took my whiteboard and ran a sample through by hand with all of us watching to see if we could figure out where it worked.
 
-Sure, we'd abandoned that working alone thing, but at least we were making process. That's all that matters, right? ;)
+Sure, we'd abandoned that working alone thing, but at least we were making process. That's all that matters, right[^ken_footnote]? ;)
 
 Around 4am, I went to bed and they continued working for a couple of hours out in the dining room before leaving. Clearly, we needed to work on it on Tuesday to meet the deadline.
 
@@ -114,4 +114,4 @@ I broke my vow and signed up for GUI Programming (MFC, VB6, AWT/Swing), taught b
 
 As it turns out, he is one of the two professors that I absolutely loved from my undergrad. I don't actually use it for anything but Messenger and Events these days so I can't say I'm truly keeping in touch with him, but all these years later I'm friends with Ken on Facebook.
 
-(Ken, if you're reading this, please don't find a way to make SDSU rescind my degree for working together with friends!)
+[^ken_footnote] Ken, if you're reading this, please don't find a way to make SDSU rescind my degree for working together with friends!
