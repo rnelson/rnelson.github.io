@@ -114,4 +114,4 @@ I broke my vow and signed up for GUI Programming (MFC, VB6, AWT/Swing), taught b
 
 As it turns out, he is one of the two professors that I absolutely loved from my undergrad. I don't actually use it for anything but Messenger and Events these days so I can't say I'm truly keeping in touch with him, but all these years later I'm friends with Ken on Facebook.
 
-[^ken_footnote] Ken, if you're reading this, please don't find a way to make SDSU rescind my degree for working together with friends!
+[^ken_footnote]: Ken, if you're reading this, please don't find a way to make SDSU rescind my degree for working together with friends!
