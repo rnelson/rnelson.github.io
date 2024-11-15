@@ -10,11 +10,13 @@ tags: school, vcs, unix
 
 I've long been interested in the various enterprise UNIX systems that were starting to be phased out right around the time I got into computers. I acquired a few via eBay and my favorite was a [Sun Ultra 2](https://en.wikipedia.org/wiki/Ultra_1). It was a little beast of a machine, despite being almost a decade old when I got it. Dual 64-bit UltraSPARC II CPUs at 200 MHz each, 512 MB RAM, 4 GB + 9 GB SCSI hard disks.
 
+When I got it, I had a couple SPARCstations running Solaris 2.5.1 but I wanted something a little more modern. While its CPUs capped it at Solaris 9 instead of the latest and greatest Solaris 10, it was a great little machine. It was on `aten` that I first set up local DNS using some graphical tool. I also moved my LAN's DHCP to it to take advantage of another simple configuration GUI.
+
 # CSC 300
 
-[My undergraduate program](https://www.sdstate.edu/programs/undergraduate/computer-science-bs) had two introductory Computer Science classes (150 and 250, basically a CS I and CS II class) followed by CSC 300: Data Structures. All three were in the primary language used by the program at the time: C++. I took Data Structures the fall of my sophomore year.
+[My undergraduate program](https://www.sdstate.edu/programs/undergraduate/computer-science-bs) had two introductory Computer Science classes (150 and 250, basically a CS I and CS II class). These were followed by CSC 300 (Data Structures), which I took the fall of my sophomore year.
 
-The professor I had for the first two classes did a great job of helping students acclimate to a university environment after all of the years before. We were treated as autonomous adults, but also slightly coddled as we were knew to the whole college thing.
+The professor I had for the first two classes did a great job of helping students acclimate to a university environment after all of the years before. We were treated as autonomous adults, but also slightly coddled as we were new to the whole college thing.
 
 Data Structures, however, was run by Ken. Gone was all coddling, replaced with THE WORST PROFESSOR EVER. I vowed to never take another class with that guy once that semester was over.
 
@@ -63,7 +65,7 @@ int main() {
 }
 ```
 
-# Midnight
+# Success?
 
 It happened. Right around midnight, everything we threw at the code worked perfectly. All edges and vertices were linked together as expected, DFS and BFS both worked. WE. WERE. DONE!
 
