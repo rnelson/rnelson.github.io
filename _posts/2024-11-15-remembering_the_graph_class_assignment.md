@@ -65,13 +65,7 @@ int main() {
 
 # Midnight
 
-It happened.
-
-Right around midnight, everything we threw at the code worked perfectly.
-
-All edges and vertices were linked together as expected, DFS/BFS worked.
-
-WE. WERE. DONE!
+It happened. Right around midnight, everything we threw at the code worked perfectly. All edges and vertices were linked together as expected, DFS and BFS both worked. WE. WERE. DONE!
 
 Then some idiot (spoiler: it was me) suggested that the other two stop packing their stuff up. Before we quit for the night, we should run the professor's sample through just to be safe.
 
@@ -83,11 +77,11 @@ We immediately grabbed the whiteboard and tried to figure out where we went wron
 
 Fast forward through many hours of trying to fix it, and around 6:45am, I went to bed while the other two continued for the half an hour that I slept. My alarm went off as they were packing up to leave. It still didn't work. Class started at 11am and the assignment needed to be done by then. We could turn it in late for a percentage penalty for each class session it was late, but I wasn't giving up yet.
 
-Ken was really good at responding to student questions via email, but obviously he was sleeping while we were stuck on things and I didn't want to risk him being unable to answer me in time, so I was going to go see him during his office hours.
+Ken was really good at responding to student questions via email, but obviously he was sleeping while we were stuck on things so we couldn't have gotten help during those seven hours. Not wanting to risk him being unable to answer me in time that morning, I was going to go see him during his office hours.
 
 # Run run run
 
-At this point in my life, I was not a runner. I had never been a runner. I was one of those kids who would walk 80% of the mile at the end of the school year when we were all forced to do it. Running hurt and was not fun.
+At this point in my life, I was not a runner. I had never been a runner. In fact, when we were forced to run the mile at the end of each school year in elementary school, I was one of those kids who would walk 80% way and only run when we were over by the teachers yelling at us to stop walking. Running hurt, running was not fun.
 
 The bike I had at the time was too small for me and my knees hurt when I used it, so just before Ken's office hour started, I ran to campus. Well, I ran for a quarter of a block then stopped for 2 minutes to catch my breath, walked half a block, then repeat. It was not pleasant, but thankfully I lived close to campus.
 
@@ -97,9 +91,7 @@ Before even looking at my code, he dug through one of his desk drawers and pulle
 
 I was **mad**. I was also in shock, so he probably just saw a blank look on my face.
 
-A common practice among professors is to reuse assignments each semester, but tweak them slightly. At the very least change the values used to test to ensure students aren't just hard-coding solutions for a given input.
-
-When he went to prepare the assignment for us that semester, Ken mistakenly included the inputs from one set and the outputs from another. Two hours before class, nobody had brought it to his attention.
+You see, a common practice among professors is to reuse assignments each semester, but tweak them slightly. At the very least change the values used to test to ensure students aren't just hard-coding solutions for a given input. When he went to prepare the assignment for us that semester, Ken mistakenly included the inputs from one set and the outputs from another. Two hours before class, nobody had brought it to his attention.
 
 # Run run run again
 
@@ -127,6 +119,6 @@ As a junior, I needed to add a Computer Science class to my schedule. Being a sm
 
 I broke my vow and signed up for GUI Programming (MFC, VB6, AWT/Swing), taught by Ken. Being a little further away from those early college days and not being salty about an honest mistake, I figured I'd give the guy another chance.
 
-As it turns out, he is one of the two professors that I absolutely loved from my undergrad. I don't actually use it for anything but Messenger and Events these days so I can't say I'm truly keeping in touch with him, but all these years later I'm friends with Ken on Facebook.
+As it turns out, he is one of the two professors that I absolutely loved from my undergrad. I don't actually use it for anything but Messenger and Events these days so I can't say I'm truly keeping in touch with him, but all these years later I'm friends with Ken on Facebook. He is one of the two professors who truly impacted me and that, other than this one story, I think back of fondly.
 
 [^ken_footnote]: Ken, if you're reading this, please don't find a way to make SDSU rescind my degree for working together with friends!
