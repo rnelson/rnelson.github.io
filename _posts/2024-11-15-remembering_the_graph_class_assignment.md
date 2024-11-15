@@ -14,11 +14,15 @@ When I got it, I had a couple SPARCstations running Solaris 2.5.1 but I wanted s
 
 # CSC 300
 
-[My undergraduate program](https://www.sdstate.edu/programs/undergraduate/computer-science-bs) had two introductory Computer Science classes (150 and 250, basically a CS I and CS II class). These were followed by CSC 300 (Data Structures), which I took the fall of my sophomore year.
+[My undergraduate program](https://www.sdstate.edu/programs/undergraduate/computer-science-bs) had students go through three initial classes to get a good grasp on programming in the main language used by the program (at the time, C++):
 
-The professor I had for the first two classes did a great job of helping students acclimate to a university environment after all of the years before. We were treated as autonomous adults, but also slightly coddled as we were new to the whole college thing.
+- CSC 150 (~CS I)
+- CSC 250 (~CS II)
+- CSC 300 (Data Structures)
 
-Data Structures, however, was run by Ken. Gone was all coddling, replaced with THE WORST PROFESSOR EVER. I vowed to never take another class with that guy once that semester was over.
+The first year, you take 150/250 and work on university-wide requirement type stuff. Sophomore year you jump into 300 and maybe take another CSC class at the same time. Exciting!
+
+The professor I had for the first two classes did a great job of helping students acclimate to a university environment after all of the years before. We were treated as autonomous adults, but also slightly coddled as we were new to the whole college thing. Data Structures, however, was run by Ken. Gone was all coddling, replaced with THE WORST PROFESSOR EVER. I vowed to never take another class with that guy once that semester was over.
 
 # Assignment 8
 
