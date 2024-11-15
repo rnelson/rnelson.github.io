@@ -125,7 +125,7 @@ As a junior, I needed to add a Computer Science class to my schedule. Being a sm
 
 I broke my vow and signed up for GUI Programming (MFC, VB6, AWT/Swing), taught by Ken. Being a little further away from those early college days and not being salty about an honest mistake, I figured I'd give the guy another chance.
 
-As it turns out, he is one of the two professors that I absolutely loved from my undergrad. All these years later (and for quite some time now), I'm even friends with Ken on Facebook. He is one of the two professors who truly impacted me and that, other than this one story, I think back of fondly.
+As it turns out, he is one of the two professors that I absolutely loved from my undergrad. All these years later (and for quite some time now), I'm even friends with Ken on Facebook. He is one of the two professors who truly impacted me and that, other than this one story, I think back on fondly. Okay, yeah, this story too. It's funny these days.
 
 # Conclusion
 
