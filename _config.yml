@@ -14,9 +14,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rnelson.github.io" # the base hostname & protocol for your site
 github_username:  rnelson
 
-theme: jekyll-theme-minima
+theme: jekyll-theme-midnight
 minima:
   skin: solarized-dark
+  social_links:
+    - { platform: bluesky, user_url: "https://bsky.app/profile/libexec.net" }
+    - { platform: flickr, user_url: "https://flickr.com/photos/rossn/sets" }
+    - { platform: github,  user_url: "https://github.com/rnelson" }
+    - { platform: instagram,  user_url: "https://instagram.com/rossnelson84" }
+    - { platform: mastodon,  user_url: "https://bsd.network/@rnelson" }
 
 # Build settings
 markdown: redcarpet
