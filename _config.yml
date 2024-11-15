@@ -19,4 +19,6 @@ markdown: redcarpet
 redcarpet:
   extensions: [footnotes]
 
-theme: jekyll-theme-midnight
+plugins:
+- jekyll-remote-theme
+remote_theme: pages-themes/cayman@v0.2.0
